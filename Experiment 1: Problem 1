@@ -1,0 +1,42 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+int main()
+
+{
+	double ticketPrice;
+	int numberOfTicketsSold;
+	int gameNo;
+	const double premium = 250;
+	const double box = 100;
+	const double sideline = 50;
+	const double genAd = 25;
+
+	cout << "Game Number:" ;
+	cin >> gameNo;
+
+	cout << "Premium:" ;
+	cin >> numberOfTicketsSold;
+	cout << "= " << premium*numberOfTicketsSold << endl;
+
+	cout << "Box:" ;
+	cin >> numberOfTicketsSold;
+	cout << "= " << box*numberOfTicketsSold << endl;
+
+	cout << "Sideline:" ;
+	cin >> numberOfTicketsSold;
+	cout << "= " << sideline*numberOfTicketsSold << endl;
+
+	cout << "General Admission:" ;
+	cin >> numberOfTicketsSold;
+	cout << "= " << genAd*numberOfTicketsSold << endl;
+
+	cout << "Total Sale Amount:" ;
+	cout << "= " << (premium*numberOfTicketsSold) + (box*numberOfTicketsSold) + (sideline*numberOfTicketsSold) + (genAd*numberOfTicketsSold) << endl;
+		
+	getch();
+}
